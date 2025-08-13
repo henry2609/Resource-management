@@ -1,115 +1,98 @@
 Industrial Human Resource Geo-Visualization
 📌 Project Overview
-This project analyzes the industrial classification of the workforce in India to understand the distribution of main and marginal workers across industries, geographies, and demographics.
-It updates outdated workforce data by applying EDA, feature engineering, NLP-based industry grouping, and visualization to provide policy-relevant insights.
+Analyze the industrial classification of India’s workforce to understand worker distribution by sector, geography, and demographics.
 
-The final deliverable includes:
+Update outdated workforce data using EDA, ML, and NLP for more accurate policy-making insights.
 
-A Streamlit + Plotly dashboard for interactive workforce exploration
+Build an interactive Streamlit + Plotly dashboard for data exploration.
 
-A machine learning pipeline for classification & clustering
-
-A PowerPoint presentation summarizing the problem, approach, tools, and key insights
+Deliver a PowerPoint presentation summarizing the project’s problem, tools, approach, and findings.
 
 🎯 Problem Statement
-In India, industrial classification of the workforce is essential to understand labor distribution across various sectors.
-Existing data is outdated, which affects policy-making and employment planning.
-The goal is to update and visualize this classification by:
+Industrial classification data in India is outdated.
 
-Worker type (main/marginal)
+Workers are categorized as main or marginal, excluding cultivators/agricultural laborers.
 
-Gender
+Current workforce breakdown by gender, division, and geography is incomplete.
 
-Section, division, and class
-
-State and district geography
+Objective: Provide updated, accurate workforce classification for decision-making.
 
 🛠 Tools & Technologies
-Programming & Analysis:
+Languages & Libraries:
 
 Python, Pandas, NumPy
 
-scikit-learn (ML modeling)
+scikit-learn (ML)
 
-NLTK / spaCy (NLP industry grouping)
+NLTK / spaCy (NLP)
 
-Visualization & Dashboard:
+Visualization:
 
-Plotly, Streamlit
+Plotly
+
+Streamlit
 
 Data Handling:
 
-Excel/CSV, openpyxl
+Excel / CSV
 
-Development & Version Control:
+openpyxl
+
+Development:
 
 Google Colab / VS Code
 
-GitHub (public repo)
+GitHub (Public Repo)
 
 Presentation:
 
-PowerPoint
+Microsoft PowerPoint
 
 🚀 Approach
 Data Preparation
 
-Merge multiple CSV files into a single DataFrame
+Merge multiple CSV files into a unified DataFrame.
 
-Handle missing values, remove duplicates
+Handle missing values & duplicates.
 
 Feature Engineering
 
-Total worker counts (main + marginal)
+Compute total workers (main + marginal).
 
-Male/Female ratios
+Calculate male/female ratios.
 
-Rural/Urban workforce share
+Determine rural/urban worker shares.
 
-NLP-Based Industry Grouping
+NLP Industry Grouping
 
-Map detailed industry descriptions to broad categories
-(e.g., “Manufacturing plastic products” → “Manufacturing”)
+Map specific industry names to broader categories.
 
 Model Building
 
-Classification: Predict industry category based on location & workforce data
+Classification: Predict industry category.
 
-Clustering: Group states/industries with similar workforce patterns
+Clustering: Group similar states/industries.
 
 Visualization
 
-Streamlit dashboard with:
-
-KPI cards
-
-Industry bar charts
-
-Treemaps & Sunbursts
-
-Gender & Rural/Urban splits
-
-Auto-generated insights
+Build an interactive dashboard with KPIs, charts, and insights.
 
 📊 EDA Insights (Sample)
-(Replace with your actual analysis results)
+Top Industry: Manufacturing plastics — 120,000 workers.
 
-Largest Industry: Manufacturing plastics — 120,000 workers
+Gender Ratio: Median M/F ratio = 1.3 → male-dominated.
 
-Gender Ratio: Median M/F = 1.3 (male-dominated)
+Rural Workforce Share: 62% median across industries.
 
-Rural Share: 62% median
+Top States: Maharashtra, Tamil Nadu, Uttar Pradesh.
 
-Top States: Maharashtra, Tamil Nadu, Uttar Pradesh
+Urban-heavy Sectors: IT services, finance.
 
-Urban-heavy sectors: IT services, finance
-
-Rural-heavy sectors: Agriculture-related manufacturing, poultry
+Rural-heavy Sectors: Agriculture-related manufacturing, poultry.
 
 📂 Project Structure
 bash
-Copy
-Edit
+
 ├── app.py                         # Streamlit dashboard app
 ├── data_preprocessing.py          # Load & clean data
 ├── feature_engineering.py         # Feature creation & encoding
@@ -119,29 +102,29 @@ Edit
 ├── Industrial_HR_GeoViz_Presentation.pptx  # Presentation
 └── README.md                      # Project documentation
 ▶️ How to Run
-Local
+Local:
+
 bash
-Copy
-Edit
+
 pip install -r requirements.txt
 streamlit run app.py
-Google Colab
-Upload your dataset to /content
+Google Colab:
 
-Install dependencies:
+Upload dataset to /content
+
+Install:
 
 python
-Copy
-Edit
+
 !pip install streamlit pyngrok plotly pandas openpyxl
-Run Streamlit in Colab using ngrok (see code in notebook)
+Run Streamlit via ngrok.
 
 📜 Deliverables
 Streamlit Dashboard for workforce analysis
 
 Machine Learning Models for classification/clustering
 
-PowerPoint Presentation with:
+PowerPoint Presentation covering:
 
 Problem Statement
 
@@ -150,4 +133,3 @@ Tools Used
 Approach
 
 EDA Insights
-
